@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            android:id="@+id/idposter"
+            android:src="@drawable/avengers" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="The Avengers"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_margin="10dp"
+            android:id="@+id/idtitle"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:src="@drawable/ic_star_gold"
+                android:layout_height="30dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="30"
+                android:text="IMDb : 8.0"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:id="@+id/rateid"
+                android:gravity="center_vertical"
+                android:textColor="#fff"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="50"
+                android:text="04 May 2012"
+                android:textStyle="italic"
+                android:id="@+id/iddate"
+                android:textAlignment="textEnd"
+                android:textSize="20sp"
+                android:layout_marginEnd="10dp"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Action, Adventure, Sci-Fi"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:id="@+id/idgenre"
+            android:layout_marginStart="10dp"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="17sp"
+            android:layout_margin="10dp"
+            android:textColor="#B6B6B6"
+            android:id="@+id/iddesc"
+            android:textAlignment="center"
+            android:text="Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity."
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

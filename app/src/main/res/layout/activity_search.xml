@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".SearchActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:src="@drawable/imdb"
+        android:layout_height="250dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:text="IMDb is the world's most popular and authoritative source for movie, TV and celebrity content."/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="#fff"
+        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="85"
+            android:textColor="#111"
+            android:id="@+id/searchedit"
+            android:hint="Search IMDb"
+            android:background="#fff"
+            android:padding="2dp"
+            android:layout_height="50dp"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_weight="15"
+            android:id="@+id/searchbtn"
+            android:scaleType="centerCrop"
+            android:background="@drawable/ic_search_imdb"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
